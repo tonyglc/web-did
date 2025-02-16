@@ -1,0 +1,141 @@
+/* TRAJECTORIA SECTION */
+.trajectoria-section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.trajectoria-section img {
+  width: 180px;
+  border-radius: 12px;
+}
+
+.trajectoria-section h2 {
+  font-size: 2.5rem;
+  color: #922c90;
+  margin-bottom: 1rem;
+}
+
+.trajectoria-section p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: justify;
+}
+
+/* MISSIÓ SECTION */
+.missio-section {
+  background-color: #f4f4fb; /* Fondo sutil */
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.missio-section h2 {
+  color: #922c90;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #922c90;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* EQUIP SECTION */
+.equip-section {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.equip-section h2 {
+  color: #922c90;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 3 / 4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que las imágenes ocupen todo el contenedor */
+  border-radius: 12px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Animaciones */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

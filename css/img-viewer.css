@@ -1,0 +1,51 @@
+/* Estilos para la galería */
+.galeria img {
+  width: 150px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.galeria img:hover {
+  opacity: 0.7;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Contenido del modal */
+.modal-contenido {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  z-index: 9999;
+}
+
+/* Botón para cerrar */
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Texto de descripción si lo deseas */
+.caption {
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+}

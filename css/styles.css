@@ -1,0 +1,176 @@
+@import url(slider.css);
+@import url(contact.css);
+@import url(header.css);
+
+/* Global settings */
+body {
+  font-family: "Comfortaa", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 1rem 0;
+}
+
+section {
+  padding: 4rem 1rem;
+  margin: 4rem 0rem;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+.page_title {
+  font-size: 3rem;
+  color: #922c90;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Sticky Header */
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0; /* Espaciado interno */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  flex: 0 0 auto;
+}
+
+header img {
+  width: 100px;
+}
+
+header .company-name {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #922c90;
+  margin: 0;
+}
+
+nav {
+  flex: 1 1 auto; /* El menú ocupa espacio flexible */
+  text-align: right;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem; /* Espaciado entre enlaces del menú */
+  flex-wrap: wrap; /* Permite que los elementos bajen si no hay espacio */
+}
+
+nav ul li {
+  flex: 0 1 auto; /* Cada elemento ocupa espacio según su contenido */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #922c90;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Evita que el texto se parta */
+}
+
+nav ul li a:hover {
+  color: #fcc400; /* Efecto hover */
+}
+
+/* Espaciado entre header y contenido */
+main {
+  margin-top: 3rem; /* Añade espacio debajo del header */
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  margin: 0 10%;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+/* About Section */
+.section-contact {
+  background: white;
+  text-align: center;
+}
+.about-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+  background-color: white;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-did {
+  display: flex;
+  justify-content: space-around;
+}
+.about-section img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+
+.about-section h2 {
+  color: #922c90;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+.hidden {
+  display: none;
+}

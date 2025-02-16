@@ -1,0 +1,14 @@
+.transparencia-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;;
+} 
+
+.transparencia-item {
+  max-width: 350px;
+  color: #000;
+}
+.transparencia-item a img {
+  max-width: 250px;
+}
