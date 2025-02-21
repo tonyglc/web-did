@@ -13,3 +13,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const status = urlParams.get('status');
+  if (status === 'ok') {
+    alert('Mensaje enviado con éxito');
+  } else if (status === 'fail') {
+    alert('Hubo un error al enviar el mensaje');
+  }
+});
