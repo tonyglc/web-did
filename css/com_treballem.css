@@ -1,42 +1,24 @@
-.project-card {
+/*  GENERAL */
+h2 {
+  color: #008f94;
+}
+
+/* PERSPECTIVA FEMINISTA */
+.perspectiva-feminista {
+  text-align: center;
+}
+
+.perspectiva-container{
   display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  margin: 0 auto;
-  min-height: 250px;
-  padding: 4rem 1rem;
-  gap: 3rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.perspectiva {
+  max-width: 45%;
+}
+.vertical-separator {
+  border-right: 1px solid #ccc;
+  height: 200px;
 }
 
-/* Imagen de la estrella */
-.project-image {
-  margin-right: 10px;
-  max-width: 300px;
-}
-
-/* Texto del proyecto */
-.project-text {
-  flex-grow: 1;
-  line-height: 1.5;
-}
-.project-text h2 {
-  color: #922c90;
-}
-
-/* Botón de descarga */
-.project-download {
-  display: flex;
-  align-items: center;
-  color: #666;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-/* Icono de descarga */
-.download-icon {
-  margin-right: 5px;
-  max-width: 30px;
-  max-height: 30px;
-}
+/* GAMIFICACIO */

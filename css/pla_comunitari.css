@@ -1,12 +1,3 @@
-/* Contenedor principal */
-.project-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  margin: auto;
-}
-
 /* Tarjeta de proyecto */
 .project-card {
   display: flex;
@@ -16,7 +7,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   margin: 0 auto;
   min-height: 250px;
-  padding: 4rem 1rem;
+  padding: 2rem;
   gap: 3rem;
 }
 

@@ -15,18 +15,107 @@
   color: #008f94;
 }
 
-
-.activitats-tallers-container{
+.text-container {
+  text-align: justify;
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.activitats-tallers-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 2rem;
 }
-.activitats-tallers-item{
-  text-align: center;
+.activitats-tallers-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem 6rem 2rem 4rem;
+  transition: transform 0.3s ease-in-out;
+}
+.activitats-tallers-item h2 {
   color: #008f94;
+  text-align: center;
+}
+.dossier-img {
+  max-width: 300px;
+  border-radius: 8px;
+  transition: opacity 0.3s;
+  flex-shrink: 0;
 }
 
-.dossier-img {
-  max-width: 400px;
+.dossier-img:hover {
+  opacity: 0.8;
+}
+
+.taller-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.text-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.list-group {
+  text-align: left;
+  background: #f3f4f6;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.list-group h2 {
+  font-size: 1.4rem;
+  color: #008f94;
+  margin-bottom: 0.5rem;
+}
+
+.list-group ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+@media (max-width: 1024px) {
+  .title-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .activitats-tallers-container {
+    padding: 0 2rem;
+  }
+
+  .dossier-img {
+    max-width: 120px;
+  }
+
+  .activitats-tallers-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  .list-group {
+    text-align: left;
+  }
 }
