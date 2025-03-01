@@ -15,6 +15,48 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      .tabs {
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+        padding: 10px;
+        min-height: 150px;
+      }
+      .tab {
+        padding: 10px 20px;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        min-width: 150px;
+      }
+      .tab img {
+        width: 64px;
+        margin: 0 8px 20px 0;
+      }
+      .tab:hover,
+      .tab.active {
+        border-bottom: 3px solid orange;
+        font-weight: bold;
+      }
+      .content {
+        display: none;
+        padding: 20px;
+      }
+      .content.active {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <!-- Header -->
@@ -107,12 +149,35 @@
     </div>
 
     <!-- Main Content -->
-    <main id="trajectoria">
+    <main id="areesActuacio">
       <h2 class="page_title">Arees d'actuació</h2>
-      <!-- Trajectoria -->
-      <section id="trajectoria" >
-      </section>
-      <!-- END Trajectoria -->
+      <div class="tabs">
+        <div class="tab active" onclick="showContent(0)">
+          <img src="../img/arees_actuacio/Family.png" alt="Icon 1" />Infància i família
+        </div>
+        <div class="tab" onclick="showContent(1)">
+          <img src="../img/arees_actuacio/igualtat.png" alt="Icon 2" />Igualtat
+        </div>
+        <div class="tab" onclick="showContent(2)">
+          <img src="../img/arees_actuacio/Old Man.svg" alt="Icon 3" />Gent Gran
+        </div>
+        <div class="tab" onclick="showContent(3)">
+          <img src="../img/arees_actuacio/diversitat_funcional.png" alt="Icon 4" />Diversitat funcional
+        </div>
+        <div class="tab" onclick="showContent(4)">
+          <img src="../img/arees_actuacio/Educació.png" alt="Icon 4" />Educació
+        </div>
+        <div class="tab" onclick="showContent(5)">
+          <img src="../img/arees_actuacio/global.png" alt="Icon 4" />Accions globals
+        </div>
+      </div>
+
+      <div id="content-0" class="content active">Contenido de la Pestaña 1</div>
+      <div id="content-1" class="content">Contenido de la Pestaña 2</div>
+      <div id="content-2" class="content">Contenido de la Pestaña 3</div>
+      <div id="content-3" class="content">Contenido de la Pestaña 4</div>
+      <div id="content-4" class="content">Contenido de la Pestaña 5</div>
+      <div id="content-5" class="content">Contenido de la Pestaña 6</div>
     </main>
 
     <!-- Footer -->
@@ -169,5 +234,17 @@
     </footer>
     <!-- END Footer -->
     <script src="../js/index.js"></script>
+    <script>
+      function showContent(index) {
+        const tabs = document.querySelectorAll(".tab");
+        const contents = document.querySelectorAll(".content");
+
+        tabs.forEach((tab) => tab.classList.remove("active"));
+        contents.forEach((content) => content.classList.remove("active"));
+
+        tabs[index].classList.add("active");
+        contents[index].classList.add("active");
+      }
+    </script>
   </body>
 </html>
